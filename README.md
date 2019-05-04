@@ -33,3 +33,18 @@ Para conferir o código.
 ```bash
 flake8
 ```
+
+#Travis - Integração Contínua
+Automatizar tarefas usando o Travis.
+- Criar o arquivo de configuração .travis.yml
+```
+language: python
+dist: xenial
+sudo: true
+python:
+  - 3.7.2
+install:
+  - pip install -q -r requirements-dev.txt
+script:
+  - flake8
+```
