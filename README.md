@@ -37,8 +37,9 @@ flake8
 ```
 
 #Travis - Integração Contínua
-Automatizar tarefas usando o Travis.
+Automatizar tarefas usando o Travis com a conta do Github.
 - Criar o arquivo de configuração .travis.yml na raiz do projeto.
+    - a opção -q (quiet) oculta as instalações de dependências do log do Travis.
 ```
 language: python
 dist: xenial
@@ -49,4 +50,19 @@ install:
   - pip install -q -r requirements-dev.txt
 script:
   - flake8
+```
+- Adicionar repositório ao https://travis-ci.org/ se o repositório for público ou https://travis-ci.com/ caso seja privado.
+
+##Upgrade das dependências
+Como saber caso haja um novo release de alguma lib usada no projeto?
+
+Emulando upgrade:
+- alterar requirements.txt com uma versão mais antiga da lib
+- desinstalar requests
+```bash
+pip uninstall requests
+```
+- instalar uma versão anterior da lib
+```bash
+pip install requests==2.18.3
 ```
