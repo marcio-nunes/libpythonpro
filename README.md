@@ -36,7 +36,7 @@ flake8
 
 #Travis - Integração Contínua
 Automatizar tarefas usando o Travis.
-- Criar o arquivo de configuração .travis.yml
+- Criar o arquivo de configuração .travis.yml na raiz do projeto.
 ```
 language: python
 dist: xenial
