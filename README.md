@@ -1,6 +1,6 @@
 # libpythonpro
 Usando a lib requests para buscar o avatar do uauário Github.
-
+https://api.github.com/users/marcio-nunes
 ```bash
 pip install requests
 ```
