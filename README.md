@@ -1,4 +1,6 @@
 # libpythonpro
+[![Build Status](https://travis-ci.com/marcio-nunes/libpythonpro.svg?token=Sz9oyCVW8oMiJ5wFzrrY&branch=master)](https://travis-ci.com/marcio-nunes/libpythonpro)
+
 Usando a lib requests para buscar o avatar do uauário Github.
 https://api.github.com/users/marcio-nunes
 ```bash
