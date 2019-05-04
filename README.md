@@ -29,7 +29,7 @@ Criar o arquivo de configuração .flake8 na raiz do projeto para excluir a past
 max-line-length = 120
 exclude=.venv
 ```
-Para conferir o código:
+Para conferir o código.
 ```bash
 flake8
 ```
