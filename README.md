@@ -81,3 +81,4 @@ Também é possível verificar as versões das libs com o comando:
 ```bash
 pip list --outdated
 ```
+teste
