@@ -56,7 +56,7 @@ script:
 ```
 - Adicionar repositório (public) ao https://travis-ci.org/ ou https://travis-ci.com/ caso seja privado.
 
-##Upgrade das dependências
+## Upgrade das dependências
 Como saber caso haja um novo release de alguma lib usada no projeto?
 
 Usar o https://pyup.io para automatizar as verificações de atualizações das dependências.
