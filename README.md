@@ -39,7 +39,7 @@ Para conferir o código.
 flake8
 ```
 
-#Travis - Integração Contínua
+# Travis - Integração Contínua
 Automatizar tarefas usando o Travis com a conta do Github.
 - Criar o arquivo de configuração .travis.yml na raiz do projeto.
     - a opção -q (quiet) oculta as instalações de dependências no log do Travis.
