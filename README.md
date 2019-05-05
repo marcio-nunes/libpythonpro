@@ -73,3 +73,11 @@ pip install requests==2.18.3
 ```
 4. adicionar o Repo ao Pyup
     - adicionar o distintivo ao Readme
+
+O Pyup fará a verificação e criará pull requests para atualização das libs.
+No Github, na aba File Changes em Pull Requests avaliar e aplicar ou não as mudanças.
+
+Também é possível verificar as versões das libs com o comando:
+```bash
+pip list --outdated
+```
