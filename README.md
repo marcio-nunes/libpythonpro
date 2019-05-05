@@ -1,8 +1,11 @@
 # libpythonpro
-[![Build Status](https://travis-ci.com/marcio-nunes/libpythonpro.svg?token=Sz9oyCVW8oMiJ5wFzrrY&branch=master)](https://travis-ci.com/marcio-nunes/libpythonpro)
+[![Build Status](https://travis-ci.org/marcio-nunes/libpythonpro.svg?branch=master)](https://travis-ci.org/marcio-nunes/libpythonpro)
+[![Updates](https://pyup.io/repos/github/marcio-nunes/libpythonpro/shield.svg)](https://pyup.io/repos/github/marcio-nunes/libpythonpro/)
+[![Python 3](https://pyup.io/repos/github/marcio-nunes/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/marcio-nunes/libpythonpro/)
+
 
 Usando a lib requests para buscar o avatar do uauário Github.
-https://api.github.com/users/marcio-nunes
+https://api.github.com/users/usuario
 ```bash
 pip install requests
 ```
@@ -39,7 +42,7 @@ flake8
 #Travis - Integração Contínua
 Automatizar tarefas usando o Travis com a conta do Github.
 - Criar o arquivo de configuração .travis.yml na raiz do projeto.
-    - a opção -q (quiet) oculta as instalações de dependências do log do Travis.
+    - a opção -q (quiet) oculta as instalações de dependências no log do Travis.
 ```
 language: python
 dist: xenial
@@ -51,18 +54,22 @@ install:
 script:
   - flake8
 ```
-- Adicionar repositório ao https://travis-ci.org/ se o repositório for público ou https://travis-ci.com/ caso seja privado.
+- Adicionar repositório (public) ao https://travis-ci.org/ ou https://travis-ci.com/ caso seja privado.
 
 ##Upgrade das dependências
 Como saber caso haja um novo release de alguma lib usada no projeto?
 
+Usar o https://pyup.io para automatizar as verificações de atualizações das dependências.
+
 Emulando upgrade:
-- alterar requirements.txt com uma versão mais antiga da lib
-- desinstalar requests
+1. alterar requirements.txt com uma versão mais antiga da lib
+2. desinstalar requests
 ```bash
 pip uninstall requests
 ```
-- instalar uma versão anterior da lib
+3. instalar uma versão anterior da lib
 ```bash
 pip install requests==2.18.3
 ```
+4. adicionar o Repo ao Pyup
+    - adicionar o distintivo ao Readme
