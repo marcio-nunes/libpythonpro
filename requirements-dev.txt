@@ -16,5 +16,6 @@ attrs==19.1.0
 #Coverage
 coverage==4.5.3
 pytest-cov==2.7.1
+pytest-mock==1.10.4
 
 -r requirements.txt
